@@ -1,4 +1,4 @@
-/*
+/**
  * @author Michael Chang
  * Temperature Converter
  * Version: 1.0, 8/29/2016
@@ -15,7 +15,7 @@ public class TempConvert {
 		float tempNum;
 		
 		Scanner input = new Scanner(System.in);
-		// Creates new Scanner object. Declares input as variable representing Scanner object.
+		// Creates new Scanner object. Declares "input" as variable representing Scanner object.
 		
 		System.out.print("Do you want to convert into Celsius or Fahrenheit [c or f]: ");
 		temp = input.nextLine().charAt(0);
