@@ -1,0 +1,32 @@
+/**
+ * @author Michael Chang
+ * Created 8/30/2016
+ *
+ */
+
+import java.util.Scanner;
+public class DoMath {
+
+	/**
+	 * @param args
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double result;		
+		
+		result = Calculate.square(64);
+		
+		System.out.println(result);
+		
+		/*Scanner input = new Scanner(System.in);
+		
+		System.out.print("Number to Square: ");
+		result = input.nextDouble();
+		System.out.println();
+		
+		System.out.println(Calculate.square(result));
+		*/
+	}
+
+}
