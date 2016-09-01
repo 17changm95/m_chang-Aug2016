@@ -51,9 +51,6 @@ public class Calculate {
 	public static String toMixedNum(int numer1, int denom){
 		int whole = numer1 / denom;
 		int numer2 = numer1 % denom;
-		String answer = whole + "_" + numer2 + "/" + denom;
-		return answer;
+		String answer = whole + "_" + numer2 + "/" denom;
 	}
-	
-	
 }

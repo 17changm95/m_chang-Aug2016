@@ -52,8 +52,5 @@ public class Calculate {
 		int whole = numer1 / denom;
 		int numer2 = numer1 % denom;
 		String answer = whole + "_" + numer2 + "/" + denom;
-		return answer;
 	}
-	
-	
 }
