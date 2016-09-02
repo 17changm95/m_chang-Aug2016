@@ -55,29 +55,5 @@ public class Calculate {
 		return answer;
 	}
 	
-	public static String foil(int a, int b, int c, int d, String var) {
-		int firstCo = a * c;
-		int secondCo = (a * d) + (b * c);
-		int thirdCo = b * d;
-		String op1;
-		String op2;
-		
-		if (secondCo > 0) {
-			op1 = "+";
-		} else if (secondCo < 0) {
-			op1 = "-";
-		} else {
-			op1 = "";
-		}
-		
-		if (thirdCo > 0) {
-			op2 = "+";
-		} else if (thirdCo < 0) {
-			op2 = "-";
-		} else {
-			op2 = "";
-		}
-		
-		String answer = firstco + var + "^2" + op1 + secondCo + var + op2 + thirdCo
-	}
+	
 }
