@@ -13,7 +13,7 @@ public class DoMath {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		float num;
+		/*float num;
 		char op;
 		
 		Scanner input = new Scanner(System.in);
@@ -35,7 +35,16 @@ public class DoMath {
 			
 			default:
 				System.out.printf("You have entered invalid values.");
-		}
+		} */
+		
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
+		System.out.println(Calculate);
 		
 	}
 
