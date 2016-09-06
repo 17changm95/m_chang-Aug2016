@@ -37,19 +37,19 @@ public class DoMath {
 				System.out.printf("You have entered invalid values.");
 		} */
 		
-		//System.out.println(Calculate.square(4));
-		//System.out.println(Calculate.cube(4));
-		//System.out.println(Calculate.absValue(-95));
-		//System.out.println(Calculate.average(4, 8));
-		//System.out.println(Calculate.average(34, 56, 87));
-		//System.out.println(Calculate.discriminant(5, 8, 9));
-		//System.out.println(Calculate.foil(1, -7, -8, 8, "n"));
-		//System.out.println(Calculate.isDivisibleBy(9, 2));
-		//System.out.println(Calculate.max(5, 89));
-		//System.out.println(Calculate.min(4, 78));
-		//System.out.println(Calculate.toImproperFrac(9, 5, 8));
-		//System.out.println(Calculate.toMixedNum(9, 3));
-		System.out.println(Calculate.round(99.4567));
+		System.out.println(Calculate.square(4));
+		System.out.println(Calculate.cube(4));
+		System.out.println(Calculate.absValue(-95));
+		System.out.println(Calculate.average(4, 8));
+		System.out.println(Calculate.average(34, 56, 87));
+		System.out.println(Calculate.discriminant(5, 8, 9));
+		System.out.println(Calculate.foil(1, -7, -8, 8, "n"));
+		System.out.println(Calculate.isDivisibleBy(9, 2));
+		System.out.println(Calculate.max(5, 89));
+		System.out.println(Calculate.min(4, 78));
+		System.out.println(Calculate.toImproperFrac(9, 5, 8));
+		System.out.println(Calculate.toMixedNum(9, 3));
+		//System.out.println(Calculate.);
 		
 	}
 

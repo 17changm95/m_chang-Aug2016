@@ -55,7 +55,7 @@ public class Calculate {
 		return answer;
 	}
 	
-	public static String foil(int a, int b, int c, int d, String var){
+	public static String foil(int a, int b, int c, int d){
 		int firstCo = a * c;
 		int secondCo = (a * d) + (b * c);
 		int thirdCo = b * d;
@@ -63,23 +63,22 @@ public class Calculate {
 		String op2;
 		
 		if (secondCo > 0) {
-			op1 = " + ";
+			op1 = "+";
 		} else if (secondCo < 0) {
-			op1 = " - ";
+			op1 = "-";
 		} else {
 			op1 = "";
 		}
 		
 		if (thirdCo > 0) {
-			op2 = " + ";
+			op2 = "+";
 		} else if (thirdCo < 0) {
-			op2 = " - ";
+			op2 = "-";
 		} else {
 			op2 = "";
 		}
 		
-		String answer = firstCo + var + "^2" + op1 + secondCo + var + op2 + thirdCo;
-		return answer;
+		String answer = firstco + var + "^2" + op1 + secondCo + var + op2 + thirdCo;
 	}
 	
 	public static boolean isDivisibleBy(int dividend, int divisor) {
@@ -119,13 +118,8 @@ public class Calculate {
 		}
 	}
 	
-	public static double round(double num) {
-		double numAdded = num + 0.005;
-		double numMult = numAdded * 100;
-		int numCasted = (int) numMult;
-		double answer = (double) numCasted / 100.0;
+	/*public static double round2(double num) {
 		
-		return answer;
 	}
-	
+	*/
 }

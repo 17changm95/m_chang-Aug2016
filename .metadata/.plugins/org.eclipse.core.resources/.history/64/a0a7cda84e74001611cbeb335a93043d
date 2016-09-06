@@ -121,8 +121,7 @@ public class Calculate {
 	
 	public static double round(double num) {
 		double numAdded = num + 0.005;
-		double numMult = numAdded * 100;
-		int numCasted = (int) numMult;
+		int numCasted = (int) numAdded * 100;
 		double answer = (double) numCasted / 100.0;
 		
 		return answer;
