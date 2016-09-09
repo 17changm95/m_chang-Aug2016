@@ -51,7 +51,6 @@ public class DoMath {
 		//System.out.println(Calculate.toMixedNum(9, 3));
 		System.out.println(Calculate.round(99.4567));
 		System.out.println(Calculate.max(-9785, 1342, 123));
-		System.out.println(Calculate.max(123, 134, 156));
 		
 	}
 
