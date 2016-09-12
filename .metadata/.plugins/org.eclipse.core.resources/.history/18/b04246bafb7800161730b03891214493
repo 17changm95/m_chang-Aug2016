@@ -52,7 +52,7 @@ public class DoMath {
 		System.out.println(Calculate.round(99.4567));
 		System.out.println(Calculate.max(-9785, 1342, 123));
 		System.out.println(Calculate.max(123, 134, 156));
-		System.out.println(Calculate.max(123, 123, 123));
+		Syste=m.out.println(Calculate.max(123, 123, 123))
 		
 	}
 

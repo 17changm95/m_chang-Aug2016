@@ -104,6 +104,8 @@ public class Calculate {
 		} 
 		if (num2 > num1) {
 			return num2;
+		} else {
+			return num1 + num2;
 		}
 		
 	}
@@ -131,7 +133,7 @@ public class Calculate {
 		}
 	}
 	
-	public static double round2(double num) {
+	public static double round(double num) {
 		double numAdded = num + 0.005;
 		double numMult = numAdded * 100;
 		int numCasted = (int) numMult;
@@ -140,12 +142,6 @@ public class Calculate {
 		return answer;
 	}
 	
-	public static double exponent(double num, int pwr) {
-		if (num >= 0) {
-			for (int i = 1; i <= pwr; i++) {
-				num;
-			}
-		}
-	}
+	public static double 
 	
 }
