@@ -153,10 +153,4 @@ public class Calculate {
 		return newNum;
 	}
 	
-	public static int factorial(int num) {
-		
-		while (num >= 1) {
-			
-		}
-	}
 }
