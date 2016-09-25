@@ -13,7 +13,6 @@ public class DoMath {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Calculate.absValue(-6523));
-	}
-
+		System.out.println(Calculate.sqrt(3.567));
+		}
 }
