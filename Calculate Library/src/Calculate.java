@@ -37,48 +37,58 @@ public class Calculate {
 		return answer;
 	}
 	
+	public static double toDegrees(double angleMeasure){
+		double answer = angleMeasure * 180 / 3.14159;
+		return answer;
+	}
+	
+	public static double toRadians(double angleMeasure){
+		double answer = angleMeasure * 3.14159 / 180;
+		return answer;
+	}
+	
 	public static double discriminant(double a, double b, double c){
-		double answer = b * b - 4 * a * c;
+		double answer = square(b) - 4 * a * c;
 		return answer;
 	}
 	
-	public static String toImproperFrac(int whole, int numer1, int denom){
-		int numer2 = denom * whole + numer1;
-		String answer = numer2 + "/" + denom;
+	public static String toImproperFrac(int wholeNum, int numerator1, int denominator){
+		int numerator2 = denominator * wholeNum + numerator1;
+		String answer = numerator2 + "/" + denominator;
 		return answer;
 	}
 	
-	public static String toMixedNum(int numer1, int denom){
-		int whole = numer1 / denom;
-		int numer2 = numer1 % denom;
-		String answer = whole + "_" + numer2 + "/" + denom;
+	public static String toMixedNum(int numerator1, int denominator){
+		int whole = numerator1 / denominator;
+		int numerator2 = numerator1 % denominator;
+		String answer = whole + "_" + numerator2 + "/" + denominator;
 		return answer;
 	}
 	
 	public static String foil(int a, int b, int c, int d, String var){
-		int firstCo = a * c;
-		int secondCo = (a * d) + (b * c);
-		int thirdCo = b * d;
+		int firstCoeff = a * c;
+		int secondCoeff = (a * d) + (b * c);
+		int thirdCoeff = b * d;
 		String op1;
 		String op2;
-		
-		if (secondCo > 0) {
-			op1 = " + ";
-		} else if (secondCo < 0) {
-			op1 = " - ";
+		// I found it necessary to use conditional statements below in order to make the plus and minus operators in the quadratic equation to reflect the sign of the coefficient.
+		if (secondCoeff > 0) {
+			op1 = "+";
+		} else if (secondCoeff < 0) {
+			op1 = "";
 		} else {
 			op1 = "";
 		}
 		
-		if (thirdCo > 0) {
-			op2 = " + ";
-		} else if (thirdCo < 0) {
-			op2 = " - ";
+		if (thirdCoeff > 0) {
+			op2 = "+";
+		} else if (thirdCoeff < 0) {
+			op2 = "";
 		} else {
 			op2 = "";
 		}
 		
-		String answer = firstCo + var + "^2" + op1 + secondCo + var + op2 + thirdCo;
+		String answer = firstCoeff + var + "^2" + op1 + secondCoeff + var + op2 + thirdCoeff;
 		return answer;
 	}
 	
