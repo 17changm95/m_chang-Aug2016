@@ -13,6 +13,7 @@ public class DoMath {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Calculate.sqrt(3.567));
-		}
+		//System.out.println(Calculate.sqrt(3.567));
+		System.out.println(Calculate.round2(Calculate.min(-1293,-123)));
+	}
 }

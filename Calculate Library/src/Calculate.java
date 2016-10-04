@@ -51,7 +51,7 @@ public class Calculate {
 	}
 	
 	public static double discriminant(double a, double b, double c){
-		//the discriminant formula. fun
+		//the discriminant formula
 		double answer = square(b) - 4 * a * c;
 		return answer;
 	}
@@ -136,6 +136,7 @@ public class Calculate {
 	
 	public static double max(double num1, double num2, double num3) {
 		//max method is overloaded. takes three numbers and outputs largest of three
+		//don't add 0 in front of number. will make max output wrong
 		if (num1 > num2 && num1 > num3) {
 			return num1;
 		}
