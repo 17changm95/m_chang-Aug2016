@@ -24,32 +24,18 @@ public class Magpie2 {
 			response = "Bob makes me feel good. :)";
 		} else if (statement.indexOf("asdfghjkl;") >= 0) {
 			response = "Talk to me in real English you illiterate Missourian.";
-		} else if (statement.indexOf("Hi ") >= 0
-				|| statement.indexOf("hi ") >= 0
-				|| statement.indexOf("hello") >= 0
-				|| statement.indexOf("Hello") >= 0) {
-			response = "How are you?";
-		} else if (statement.indexOf("good, and you") >= 0) {
+		} else if (statement.indexOf("Hi ") >= 0) {
+			response = "how are you";
+		} else if (statement.indexOf("good, and you?") >= 0) {
 			response = "Fine, until you came.";
 		} else if (statement.indexOf("Dreyer") >= 0) {
-			response = "She seems like a nice teacher";
+			response = "She seems like a nice teacher even though I have never interacted with her or heard of her in my life";
 		} else if (statement.indexOf("Louie") >= 0) {
-			response = "Haha.";
-		} else if (statement.indexOf("9+10") >= 0) {
-			response = "21";
-		} else if (statement.indexOf("Cotter") >= 0) {
 			response = "I'm triggered.";
-		} else if (statement.indexOf("harambe") >= 0
-				|| statement.indexOf("Harambe") >=0) {
-			response = "rip";
-		} else if (statement.indexOf("pikachu") >= 0
-				|| statement.indexOf("Pikachu") >= 0) {
-				response = "Pikachu welcomes you to the world of Pokemon!!!\n\t\t(\\__/)\n\t\t(o^.^)\n\t       z(____)";
-		} else if (statement.indexOf("dank") >= 0 
-				|| statement.indexOf("memes") >= 0) {
-					response = randomDankMemeResponse();
-				}
-			else {
+		} else if (statement.indexOf("What is 9 + 10?") >= 0) {
+			response = "21";
+		}
+		else {
 			response = getRandomResponse();
 		}
 		return response;
@@ -77,29 +63,6 @@ public class Magpie2 {
 			response = "I don't like what you're saying.";
 		} else if (whichResponse == 5) {
 			response = "Your opinion is worthless";
-		}
-
-		return response;
-	}
-	
-	private String randomDankMemeResponse() {
-		final int NUMBER_OF_RESPONSES = 6;
-		double r = Math.random();
-		int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
-		String response = "";
-
-		if (whichResponse == 0) {
-			response = "Harambe, may he rest in peace.";
-		} else if (whichResponse == 1) {
-			response = "I love dank may-mays.";
-		} else if (whichResponse == 2) {
-			response = "Robert?";
-		} else if (whichResponse == 3) {
-			response = "360 no scope.";
-		} else if (whichResponse == 4) {
-			response = "Hahahahahahaahahahahahahahahahahahahahahahahahaahhahha";
-		} else if (whichResponse == 5) {
-			response = "422";
 		}
 
 		return response;

@@ -42,14 +42,8 @@ public class Magpie2 {
 		} else if (statement.indexOf("harambe") >= 0
 				|| statement.indexOf("Harambe") >=0) {
 			response = "rip";
-		} else if (statement.indexOf("pikachu") >= 0
-				|| statement.indexOf("Pikachu") >= 0) {
-				response = "Pikachu welcomes you to the world of Pokemon!!!\n\t\t(\\__/)\n\t\t(o^.^)\n\t       z(____)";
-		} else if (statement.indexOf("dank") >= 0 
-				|| statement.indexOf("memes") >= 0) {
-					response = randomDankMemeResponse();
-				}
-			else {
+		} 
+		else {
 			response = getRandomResponse();
 		}
 		return response;
