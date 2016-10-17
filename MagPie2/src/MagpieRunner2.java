@@ -13,10 +13,16 @@ public class MagpieRunner2 {
 		System.out.println(maggie.getGreeting());
 		Scanner in = new Scanner(System.in);
 		String statement = in.nextLine();
+		statement = statement.trim();
 
 		while (!statement.equals("Bye")) {
-			System.out.println(maggie.getResponse(statement));
-			statement = in.nextLine();
+			if (statement == "") {
+				System.out.println("Say something!");
+				statement = in.nextLine();
+			} else {
+				System.out.println(maggie.getResponse(statement));
+				statement = in.nextLine();
+			}
 		}
 	}
 
