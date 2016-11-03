@@ -250,7 +250,7 @@ public class Calculate {
 		}	
 	}
 	
-	public static String quadform (int a, int b, int c) {
+	public static String quadForm (int a, int b, int c) {
 		//quadratic formula method in a few minutes.
 		double formPositive = round2((-(double) b + sqrt(discriminant(a, b, c))/(2. * a)));
 		double formNegative = round2((-(double) b - sqrt(discriminant(a, b, c))/(2. * a)));
