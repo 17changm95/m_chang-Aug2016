@@ -1,3 +1,10 @@
+/**
+ * @author Michael Chang
+ * @version 1.0
+ * @since 11/4/16
+ * @period 1°
+ */
+
 package fracCalc;
 import java.util.*;
 
@@ -7,9 +14,9 @@ public class FracCalc {
         Scanner console = new Scanner(System.in);
         
         System.out.print("Type in your input: ");
-        String answer = console.next();//input separated by ' '
+        String answer = console.nextLine();//input separated by ' '
         
-        produceAnswer(answer);
+        System.out.println(produceAnswer(answer));
     	
     }
     
@@ -31,16 +38,24 @@ public class FracCalc {
         	operator = "+";
         } else if (input.contains("-")) {
         	operator = "-";
-        } else if (input.contains("/")) {
-        	operator = "/";
         } else if (input.contains("*")) {
         	operator = "*";
         } else {
         	throw new IllegalArgumentException("Please include operator in input");
         }
         
-        firstOperand = input.substring(0, input.indexOf(operator));
-        secondOperand = input.substring(input.indexOf(operator) + 1);
+        int operatorIdx = input.indexOf(operator);
+        
+        firstOperand = input.substring(0, operatorIdx);
+        
+        //will come back and fix later, negatives are difficult to fix at this point        
+        if (operator.equals("-") && input.length() == 9) {
+        	secondOperand = input.substring(7);
+        } else if (operator.equals("-") && input.length() == 11) {
+        	secondOperand = input.substring(6);
+        } else {
+            secondOperand = input.substring(operatorIdx + 2);
+        }
         
     	return secondOperand;
     }

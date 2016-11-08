@@ -6,11 +6,7 @@
  */
 public class Calculate {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 	}
 	
@@ -247,7 +243,7 @@ public class Calculate {
 			answer = round2(guess);
 		}
 		return answer;
-		}	
+		}
 	}
 	
 	public static String quadForm (int a, int b, int c) {
