@@ -18,7 +18,7 @@ public class FracCalc {
 	        System.out.print("Type in your input: ");
 	        answer = console.nextLine();
 	        System.out.println(produceAnswer(answer));
-        } while (answer.equals("quit") == false);
+        } while (answer.equals("quit"));
     }
     
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
@@ -32,34 +32,10 @@ public class FracCalc {
     
     public static String produceAnswer(String input) { 
         String[] fracExpr;
-        String whole;
-        String numer;
-        String denom;
         
         if (input.contains(" ")) {
         	fracExpr = input.split(" ");
-        	
-        	if (fracExpr[2].contains("_")) {
-        		whole = "whole:" + fracExpr[2].substring(0, fracExpr[2].indexOf("_")) + " ";
-        		numer = "numerator:" + fracExpr[2].substring(fracExpr[2].indexOf("_") + 1, fracExpr[2].indexOf("/")) + " ";
-        		denom = "denominator:" + fracExpr[2].substring(fracExpr[2].indexOf("/") + 1);
-        		
-        		return whole + numer + denom;
-        	} else if (fracExpr[2].contains("/") == false) {
-        		whole = "whole:" + fracExpr[2] + " ";
-        		numer = "numerator:" + 0 + " ";
-        		denom = "denominator:" + 1;
-        		
-        		return whole + numer + denom;
-        	} else if (fracExpr[2].contains("_") == false && fracExpr[2].contains("/")) {
-        		whole = "whole:" + 0 + " ";
-        		numer = "numerator:" + fracExpr[2].substring(0, fracExpr[2].indexOf("/")) + " ";
-        		denom = "denominator:" + fracExpr[2].substring(fracExpr[2].indexOf("/") + 1);
-        		
-        		return whole + numer + denom;
-        	} else {
-        		throw new IllegalArgumentException("Please enter proper values.");
-        	}
+        	return fracExpr[2];
         } else if (input.contains("quit")) {
         	return "";
         } else {

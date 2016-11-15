@@ -46,7 +46,7 @@ public class FracCalc {
         		
         		return whole + numer + denom;
         	} else if (fracExpr[2].contains("/") == false) {
-        		whole = "whole:" + fracExpr[2] + " ";
+        		whole = "whole:" + fracExpr[2];
         		numer = "numerator:" + 0 + " ";
         		denom = "denominator:" + 1;
         		

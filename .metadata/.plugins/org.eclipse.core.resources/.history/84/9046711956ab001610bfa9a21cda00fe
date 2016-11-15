@@ -45,8 +45,8 @@ public class FracCalc {
         		denom = "denominator:" + fracExpr[2].substring(fracExpr[2].indexOf("/") + 1);
         		
         		return whole + numer + denom;
-        	} else if (fracExpr[2].contains("/") == false) {
-        		whole = "whole:" + fracExpr[2] + " ";
+        	} else if (fracExpr[2].contains("_") && fracExpr[2].contains("/") == false) {
+        		whole = "whole:" + fracExpr[2];
         		numer = "numerator:" + 0 + " ";
         		denom = "denominator:" + 1;
         		
