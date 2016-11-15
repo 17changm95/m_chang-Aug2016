@@ -12,12 +12,13 @@ public class FracCalc {
 
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
+        String answer;
         
-        System.out.print("Type in your input: ");
-        String answer = console.nextLine();//input separated by ' '
-        
-        System.out.println(produceAnswer(answer));
-    	
+        do {
+	        System.out.print("Type in your input: ");
+	        answer = console.nextLine();
+	        System.out.println(produceAnswer(answer));
+        } while (answer.equals("quit"));
     }
     
     // ** IMPORTANT ** DO NOT DELETE THIS FUNCTION.  This function will be used to test your code
@@ -30,33 +31,15 @@ public class FracCalc {
     //      e.g. return ==> "1_1/4"
     
     public static String produceAnswer(String input) { 
-        String firstOperand;
-        String operator;
-        String secondOperand;
+        String[] fracExpr;
         
-        if (input.contains("+")) {
-        	operator = "+";
-        } else if (input.contains("-")) {
-        	operator = "-";
-        } else if (input.contains("*")) {
-        	operator = "*";
+        if (input.contains(" ")) {
+        	fracExpr = input.split(" ");
+        	return fracExpr[2];
+        } else if (input.contains("quit")) {
+        	return "";
         } else {
-        	throw new IllegalArgumentException("Please include operator in input");
+        	throw new IllegalArgumentException("Please enter spaces between first operand and operator and/or second operand and operator.");
         }
-        
-        int operatorIdx = input.indexOf(operator);
-        
-        firstOperand = input.substring(0, operatorIdx);
-        
-        //will come back and fix later, negatives are difficult to fix at this point        
-        if (operator.equals("-") && input.length() == 9) {
-        	secondOperand = input.substring(7);
-        } else if (operator.equals("-") && input.length() == 11) {
-        	secondOperand = input.substring(6);
-        } else {
-            secondOperand = input.substring(operatorIdx + 2);
-        }
-        
-    	return secondOperand;
     }
 }
